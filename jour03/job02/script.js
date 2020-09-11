@@ -5,7 +5,7 @@ for( i = 0; i < 6; i++){
     oImage = document.createElement('img');
     // affectation du nom de l'image
     oImage.src = t[i];
-    for (var i = 0; i < n; i++) { // bien sur, n doit etre défini quelque part...
+    for (var i = 0; i < n; i++) {
         var image = new Image();
         image.src = 'image/allumette.gif';
         images.push(image);

@@ -21,9 +21,9 @@ if (isset($_POST['submit'])) {
 
             if (!empty($test_login))
             {
-            echo "Cette email existe déjà ! Veuillez en saisie un autre.";
+            echo "Cette email existe déjà ! Veuillez en saisir un autre.";
             }else{
-                $query = mysqli_query($db, "INSERT INTO utilisateurs (nom, prenom, email, password) VALUES('$nom', '$prenom', '$email' '$password');");
+                $query = mysqli_query($db, "INSERT INTO utilisateurs (nom, prenom, email, password) VALUES('$nom', '$prenom', '$email','$password');");
 
                 die("Inscription terminée. <a href='connexion.php'>Connectez-vous</a>.");
             }
@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
 ?>
 
 
-<!DOCTYPE html
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
