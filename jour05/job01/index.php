@@ -20,7 +20,6 @@ if (isset($_POST["deco"])) {
     <?php
 
             if(isset($_SESSION['prenom'])){
-            $_SESSION['prenom'] = '';
               echo 'BONJOUR @ '.$_SESSION['prenom'];
               echo "<p>Vous êtes connecté.</p>
                     <form action='index.php' method='post'>

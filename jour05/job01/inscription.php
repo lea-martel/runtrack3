@@ -1,27 +1,29 @@
 <?php
 session_start();
-if (isset($_POST['submit'])) {
-    $nom = isset($_POST['nom']) ? $_POST['nom'] : NULL ;
-    $prenom = isset($_POST['prenom']) ? $_POST['prenom'] : NULL ; 
-    $password = htmlentities(trim($_POST['password']));
-    $email = htmlentities(trim($_POST['email']));
 
-    if ($nom && $prenom && $password && $email) {
-            //CRYPTAGE MDP
+if (isset($_POST['submit'])) {
+    $nom = htmlentities(trim($_POST['nom']));
+    $prenom = htmlentities(trim($_POST['prenom']));
+    $email = htmlentities(trim($_POST['email']));
+    $password = htmlentities(trim($_POST['password']));
+    $repeatpassword = htmlentities(trim($_POST['repeatpassword']));
+
+    if ($nom && $prenom && $email && $password && $repeatpassword) {
+        if ($password == $repeatpassword) {
             $password = password_hash($password, PASSWORD_BCRYPT, array('cost' => 15));
 
             $db = mysqli_connect('localhost', 'root', '') or die('Erreur');
             mysqli_select_db($db, 'utilisateurs');
 
-            $request = " SELECT prenom FROM utilisateurs WHERE prenom = '" . $_POST['prenom'] . "' ";
+            $request = " SELECT email FROM utilisateurs WHERE email = '" . $_POST['email'] . "' ";
             $query = mysqli_query($db, $request);
             $test_login = mysqli_fetch_array($query);
 
             if (!empty($test_login))
             {
-            echo "Ce prénom existe déjà ! Veuillez en choisir un autre.";
+            echo "Cette email existe déjà ! Veuillez en saisie un autre.";
             }else{
-                $query = mysqli_query($db, "INSERT INTO utilisateurs (prenom, nom, password, email) VALUES('$prenom','$nom' '$password','$email');");
+                $query = mysqli_query($db, "INSERT INTO utilisateurs (nom, prenom, email, password) VALUES('$nom', '$prenom', '$email' '$password');");
 
                 die("Inscription terminée. <a href='connexion.php'>Connectez-vous</a>.");
             }
@@ -32,6 +34,7 @@ if (isset($_POST['submit'])) {
     } else {
         echo "Veuillez saisir tous les champs";
     }
+}
 ?>
 
 
@@ -50,10 +53,13 @@ if (isset($_POST['submit'])) {
         <input class="input" type="text" name="nom">
         <p>Prénom</p>
         <input class="input" type="text" name="prenom">
-        <p>Mot de passe</p>
-        <input class="input" type="password" name="password">
         <p>email</p>
         <input class="input" type="text" name="email">
+        <p>Mot de passe</p>
+        <input class="input" type="password" name="password">
+        <p>Répétez votre mot de passe</p>
+        <input class="input" type="password" name="repeatpassword">
+
         <input class="input" type="submit" name="submit" value="Valider">
     </form>
 </main>
