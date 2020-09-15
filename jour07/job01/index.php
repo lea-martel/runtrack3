@@ -21,7 +21,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" href="#">Accueil <span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" href="https://laplateforme.io/">Accueil <span class="sr-only">(current)</span></a>
                     <a class="nav-link" href="#">Units</a>
                     <a class="nav-link" href="#">Jobs</a>
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Skills</a>
@@ -39,7 +39,35 @@
                         <div class="card-body">
                             <h5 class="card-title">Un Papillon</h5>
                             <p class="card-text">Un papillons, c'est un peu comme une chenille, mais avec des ailes. Ne pas ingérer</p>
-                            <a href="#" class="btn btn">Commander votre propre papillon</a>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Commander votre propre papillon</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                                    <input type="text" class="form-control" id="recipient-name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="message-text" class="col-form-label">Message:</label>
+                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Send message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -126,36 +154,36 @@
                     </div>
                 </div>
                 <div class="col">
-                <form>
-                    <div class="form-group row">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                        <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-2">Checkbox</div>
-                        <div class="col-sm-10">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                <label class="form-check-label" for="gridCheck1">
-                                    Check me out
-                                </label>
+                    <form>
+                        <div class="form-group row">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
                             </div>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-10">
-                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        <div class="form-group row">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
                         </div>
-                    </div>
-                </form>
-            </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2">Checkbox</div>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                        Check me out
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
     </main>
 </body>
