@@ -16,16 +16,10 @@
     <main>
         <div class="container-fluid bg-primary" style="height:150px;"> </div>
 
-        <div class="container bg-primary" style="height:150px; padding:30px">
+        <div class="container bg-primary" style="height:150px; margin-top:10px;">
         <div class="row">
-    <div class="col">
-      1 of 3
-    </div>
-    <div class="col">
-      2 of 3
-    </div>
-    <div class="col">
-      3 of 3
-    </div>
-  </div>
+  <div class="col-sm">col-sm</div>
+  <div class="col-sm">col-sm</div>
+  <div class="col-sm">col-sm</div>
+</div>
 </div>
