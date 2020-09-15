@@ -31,9 +31,9 @@
     </header>
     <main>
         <h1 class="title"> LaPlateforme_ </h1>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-2">
                     <div class="card" style="width: 18rem;">
                         <img src="Papillon tropical vannes.jpg" class="card-img-top" alt="papillon">
                         <div class="card-body">
@@ -71,7 +71,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-8">
                     <div class="jumbotron">
                         <h1 class="display-4">Bonjour Monde !</h1>
                         <p class="lead"> Il existe plusieurs visions du terme : </br> le monde est la matière, l'espace est les phénomème
@@ -82,7 +82,7 @@
                         <div class="spinner-border text-primary" role="status">
                             <span class="sr-only">Loading...</span></div> </br> </br>
 
-
+                        <div class="float-right">
                         <nav aria-label="Page navigation example">
                             <ul class="pagination">
                                 <li class="page-item">
@@ -104,7 +104,8 @@
                         </nav>
                     </div>
                 </div>
-                <div class="col-sm-2">
+                </div>
+                <div class="col-2">
                     <ul class="list-group">
                         <li class="list-group-item active">Papillon</li>
                         <li class="list-group-item">Végétale</li>
@@ -132,8 +133,13 @@
                         <div class="invalid-feedback">
                         </div>
                     </div>
-                    <div class="custom-file">
-                        <label class="custom-file-label" for="customFile">Mot de passe</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">@papillon.com</span>
+                        </div>
+                        <input type="text" class="form-control rounded-right" placeholder="Mot de passe" required>
+                        <div class="invalid-feedback">
+                        </div>
                     </div>
                     <div class="txt">URL internet 2 et 2.1 Beta </div>
                     <div class="input-group">
