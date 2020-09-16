@@ -14,8 +14,8 @@
   <header>
     <nav>
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo"></a>
-        <ul id="nav-mobile">
+        <a href="#" class="brand-logo">LaPlateforme_</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="#">Accueil</a></li>
           <li><a href="#">Inscription</a></li>
           <li><a href="#">Connexion</a></li>
@@ -26,8 +26,10 @@
   </header>
   <main>
     <section>
-          <form action="#" style="margin-left:15px;">
-          <div class="titre"> Civilité</div>
+      <div class="container">
+        <div class="row">
+          <form action="#">
+          <div class="titre" style="margin-top:10px;"> Civilité</div>
             <p>
               <label>
                 <input name="group1" type="radio" checked />
@@ -40,28 +42,43 @@
                 <span>Mme</span>
               </label>
             </p>
-                <div class="input-field">
+            <div class="row">
+              <form class="col s12">
+                <div class="input-field col m6 s12">
+                  <i class="material-icons prefix">account_circle</i>
                   <input id="icon_prefix" type="text" class="validate">
                   <label for="icon_prefix">Prénom</label>
                 </div>
-                    <div class="input-field">
+                <div class="row">
+                  <form class="col s12">
+                    <div class="input-field col m6 s12">
+                      <i class="material-icons prefix">account_circle</i>
                       <input id="icon_prefix" type="text" class="validate">
                       <label for="icon_prefix">Nom</label>
                     </div>
-                        <div class="input-field">
+                    <div class="row">
+                      <form class="col s12">
+                        <div class="input-field col m6 s12">
+                          <i class="material-icons prefix">home</i>
                           <input id="icon_prefix" type="text" class="validate">
                           <label for="icon_prefix">Adresse</label>
                         </div>
-                          <div class="input-field">
+                        <form class="col s12">
+                          <div class="input-field col m6 s12">
+                            <i class="material-icons prefix">mail</i>
                             <input id="icon_prefix" type="text" class="validate">
                             <label for="icon_prefix">Mail</label>
                           </div>
-                            <div class="input-field">
+                          <div class="row">
+                            <div class="input-field col m6 s12">
+                              <i class="material-icons prefix">lock</i>
                               <input id="password" type="password" class="validate">
                               <label for="password">Mot de passe</label>
                             </div>
                           </div>
-                            <div class="input-field">
+                          <div class="row">
+                            <div class="input-field col m6 s12">
+                              <i class="material-icons prefix">lock</i>
                               <input id="password" type="password" class="validate">
                               <label for="password">Confirmation mot de passe</label>
                             </div>
