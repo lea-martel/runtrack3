@@ -14,7 +14,7 @@
 
 <body>
     <main>
-        <div class="container-fluid bg-primary" style="height:150px;"> </div>
+        <div class="container-fluid bg-primary" style="height:150px;"></div>
 
         <div class="container-fluid">
             <div class="row" style="height: 5vh;">
