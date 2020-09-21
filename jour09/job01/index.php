@@ -29,7 +29,7 @@
       <div id="toplogo">
         <a href="Portfolio.html"><img id="logo" src="logo LM.png" alt="logo-header"></a>
         <ul id="menu-link">
-          <li><a class="link_header" href="#">CV</a></li>
+          <li><a class="link_header" href="CV-Léa">CV</a></li>
           <li><a class="link_header" href="#competences">COMPÉTENCES</a></li>
           <li><a class="link_header" href="#portfolio">RÉALISATIONS</a></li>
           <li><a class="link_header" href="#">CONTACT</a></li>
