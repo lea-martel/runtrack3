@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  list-style-type: none;
+
+    
+}
+
+/***HEADER***/
+
+header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: sticky;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+
+}
+
+#menu-nav {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+#toplogo {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+
+}
+
+#logo {
+
+    width: 70px;
+    height: 70px;
+
+}
+
+#menu-link {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+
+
+}
+
+.link_header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 15px;
+    color: #ffc7c8;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+
+.link_header:hover {
+
+color: whitesmoke;
+
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+
+
+/**MAIN***/
+
+.container-projects {
+
+min-height: 90vh;
+width: 100%;
+display: inline-block;
+justify-content: center;
+align-items: center;
+position: relative;
+
+}
+
+.container-projects h1{
+
+font-size: 70px;
+font-weight: 900;
+color: white;
+transform: translateY(-600px);
+animation: 1.2s slideIn ease-in-out forwards 1s;
+z-index: 30;
+opacity: 0;
+text-align: center;
+position: relative;
+margin-top: 35vh;
+}
+
+#sous-titre {
+
+    
+font-size: 25px;
+color: white;
+transform: translateY(-600px);
+animation: 1.2s slideIn ease-in-out forwards 1s;
+z-index: 30;
+text-align: center;
+margin-top: 20px;
+position: relative;
+
+}
+  
+.overlay {
+
+position: absolute;
+width: 100%;
+top: 0;
+bottom: 0;
+opacity: 0;
+left: 0;
+right: 0;
+/**background-color: #ffc4d0; **/
+background-image: url(fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg);
+background-size: cover;
+transform: scale(.5);
+animation: .5s slideIn ease-in-out forwards, 1s skewBg ease-in-out;
+  
+}
+  
+  @keyframes skewBg {
+    0% {
+      transform: scale(.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes underline {
+    100% {
+      width: 100%;
+    }
+  }
+  
+  @keyframes slideIn {
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+#container-com {
+
+display: block;
+justify-content: space-evenly;
+background-color: black;
+width: 100%;
+height: 40vh;
+}
+
+.title {
+
+font-size: 30px;
+color: white;
+font-weight: bold;
+text-align: center;
+padding: 30px 30px 30px 30px;
+
+    
+}
+
+.container-circle {
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 30%;
+
+}
+
+.circle {
+
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 150px;
+height: 150px;
+background: linear-gradient(#a442b6, #ff728e) ;
+border-radius: 50%;
+animation: animate 0.5s linear infinite;
+z-index: 0;
+}
+
+.circle-text{
+
+position: absolute;
+z-index: 1;
+animation: animate 0.5s reverse linear infinite;
+}
+
+@keyframes animate {
+
+ 100%{
+   transform:rotate(360deg)
+ }
+
+}
+
+.justify-evenly {
+
+justify-content: space-evenly;
+
+}
+
+.circle:after {
+
+content: '';
+position: absolute;
+top: 20px;
+bottom: 20px;
+right: 20px;
+left: 20px;
+border-radius: 50%;
+background-color: black;
+}
+
+.circle span {
+
+position: absolute;
+width: 100%;
+height: 100%;
+background: linear-gradient(#ffd3f8, #ffadbe) ;
+border-radius: 50%;
+
+}
+
+.circle span:nth-child(1) {
+
+  filter: blur(5px);
+}
+
+.circle span:nth-child(2) {
+
+  filter: blur(10px);
+}
+
+.content-flex {
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.circle-text {
+
+  color: white;
+  font-weight: bold;
+  margin: auto;
+
+}
+
+.block-title {
+
+display: flex;
+justify-content: center;
+font-size: 30px;
+font-weight: bold;
+padding: 15px;
+color: black;
+
+}
+
+.card {
+
+-o-box-shadow: 4px 4px 4px #8a8a8a9b;
+box-shadow: 5px 4px 4px #8a8a8a9b;
+padding: 10px;
+margin: 10px;
+
+}
+
+footer {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  margin-top: 3vh;
+}
+
+.block-footer {
+
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffc7c8 ;
+}
+
+.social-network {
+
+font-size: 30px;
+text-align: center;
+
+}
+
+.fa-github, .fa-linkedin-in {
+
+color: #ffc7c8;
+
+}
