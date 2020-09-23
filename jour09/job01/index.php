@@ -18,7 +18,7 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="shortcut icon" type="image/x-icon" href="logo-LM.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="logo-LM.png"/>
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>Portfolio</title>
 </head>
@@ -40,7 +40,7 @@
   <main>
     <div class='container-projects'>
       <h1>DEVELOPPEUR WEB & GRAPHIC DESIGNER </h1>
-      <h2 id='sous-titre'> Diplômé d'un Bac pro en Production Grahique et d'un BTS Étude d'un projet de communication. </h2>
+      <h2 id='sous-titre'>  Diplômé d'un Bac pro en Production Grahique et d'un BTS Étude d'un projet de communication. </br> Je suis actuellement une formation developpeur web à la Plateforme, je recherche un contrat d'alternance à compter de Mars 2021. </h2>
       <div class="overlay">
       </div>
     </div>
@@ -204,10 +204,10 @@
     </div>
       <footer>
         <div class="footer">
-          <div class="block-footer">RÉSEAUX</div>
+          <div class="block-footer">RÉSEAUX SOCIAUX</div>
               <div class="social-network">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="https://fr.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/lea-martel"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/lea-martel-2604/"><i class="fab fa-linkedin-in"></i></a>
               </div>
             </div>
             </div>
